@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoColeta - Descarte Consciente</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-leaf"></i>
+                <span>EcoColeta</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre Nós</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <button class="contact-btn">Fale Conosco</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="floating-elements">
+                <div class="floating-circle circle-1"></div>
+                <div class="floating-circle circle-2"></div>
+                <div class="floating-circle circle-3"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-main">
+                    <h1 class="hero-title">
+                        ECO<br>
+                        <span class="highlight">DESCARTE</span>
+                    </h1>
+                    <p class="hero-description">
+                        Transforme sua cidade em um lugar mais limpo e sustentável. 
+                        Descubra os horários de coleta, aprenda sobre descarte correto 
+                        e contribua para um futuro mais verde.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToSection('services')">
+                            Explorar Agora
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToSection('about')">
+                            <i class="fas fa-play"></i>
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-cards">
+                    <div class="info-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <span class="card-badge">+1</span>
+                        </div>
+                        <h3>Liderando o Caminho em Inovações Eco-Sustentáveis</h3>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-card">
+                        <div class="stat-large">
+                            <span class="stat-number" data-target="200">0</span><span class="stat-plus">+</span>
+                        </div>
+                        <p class="stat-description">Toneladas de resíduos coletados corretamente, contribuindo para um meio ambiente mais limpo</p>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <div class="bottom-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="200">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Toneladas Coletadas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="45">0</span><span class="stat-plus">K</span>
+                        <span class="stat-label">Famílias Participantes</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="78">0</span><span class="stat-plus">M</span>
+                        <span class="stat-label">Kg de CO2 Evitados</span>
+                    </div>
+                </div>
+                
+                <div class="bottom-card">
+                    <div class="card-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Soluções Personalizadas para uma Cidade Mais Limpa</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre o Projeto</h2>
+                <p>Promovendo educação ambiental e descarte responsável</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nossa Missão</h3>
+                    <p>O descarte correto de resíduos é fundamental para a preservação do meio ambiente. Nosso objetivo é orientar a população sobre como realizar o descarte adequado e informar sobre os dias e horários de coleta.</p>
+                    <p>Segundo a ONU, o metano é um dos cinco gases mais importantes para a poluição do ar. Com informações corretas, podemos reduzir significativamente o impacto ambiental.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horários Atualizados</h4>
+                                <p>Informações em tempo real sobre coleta por bairro</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localização Precisa</h4>
+                                <p>Encontre pontos de coleta próximos a você</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <div class="visual-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Impacto Ambiental</h4>
+                        <div class="impact-stats">
+                            <div class="impact-item">
+                                <span>85%</span>
+                                <p>Redução de resíduos nas ruas</p>
+                            </div>
+                            <div class="impact-item">
+                                <span>92%</span>
+                                <p>Satisfação dos moradores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções completas para gestão de resíduos</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" onclick="showServiceInfo('schedule')">
+                    <div class="service-icon organic">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Horários de Coleta</h3>
+                    <p>Consulte os dias e horários de coleta por bairro e tipo de resíduo</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="service-card" onclick="showServiceInfo('guide')">
+                    <div class="service-icon recyclable">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Guia de Separação</h3>
+                    <p>Aprenda como separar corretamente cada tipo de resíduo</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="service-card" onclick="showServiceInfo('locations')">
+                    <div class="service-icon electronic">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Pontos de Coleta</h3>
+                    <p>Encontre pontos especiais para eletrônicos e materiais perigosos</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="service-card" onclick="showServiceInfo('education')">
+                    <div class="service-icon hazardous">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Educação Ambiental</h3>
+                    <p>Programas educativos para escolas e comunidades</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="serviceInfo" class="service-info">
+                <p>Clique em um serviço para ver mais informações</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Entre em Contato</h2>
+                    <p>Estamos aqui para ajudar você a fazer a diferença</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(11) 3456-7890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contato@ecocoleta.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Prefeitura Municipal de Doutor Camargo - Centro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Sua mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            Enviar Mensagem
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-leaf"></i>
+                    <span>EcoColeta</span>
+                </div>
+                <p>&copy; 2024 EcoColeta. Todos os direitos reservados. Construindo um futuro mais sustentável.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
