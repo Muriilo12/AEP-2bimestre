@@ -290,6 +290,12 @@ function showServiceInfo(serviceType) {
             document.head.appendChild(style);
         }
     }
+    // Rolar até o conteúdo do serviço
+    document.getElementById('serviceInfo').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+});
+
 }
 
 // Contact form handling
